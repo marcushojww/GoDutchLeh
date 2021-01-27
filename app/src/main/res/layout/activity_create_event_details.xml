@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEventDetails"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/black"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <include layout="@layout/create_event_title_section">
+
+            </include>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/create_event_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </include>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="10dp">
+
+    </View>
+
+
+    <include layout="@layout/enter_event_name_section">
+
+    </include>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addMembersButton"
+            android:background="?selectableItemBackground"
+            android:padding="5dp"
+            android:id="@+id/addMembersButton"
+            android:layout_centerInParent="true">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+
+    </View>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_button"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/addPhotoButton"
+            android:background="?selectableItemBackground"
+            android:padding="20dp"
+            android:id="@+id/addEventPhotoButton"
+            android:layout_centerInParent="true">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="70dp">
+        
+    </View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton"
+            android:layout_gravity="center"
+            android:background="?selectableItemBackground">
+
+        </Button>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

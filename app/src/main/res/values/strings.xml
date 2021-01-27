@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GoDutchLeh</string>
+    <string name="pageHeader">CREATE\n EVENT</string>
+    <string name="detailsTab">Details</string>
+    <string name="membersTab">Members</string>
+    <string name="enterEventName">Event Name: </string>
+    <string name="addMembersButton">Add Members</string>
+    <string name="addPhotoButton">Add Photo</string>
+    <string name="saveButton">Save</string>
+    <string name="searchMembers">Search: </string>
+    <string name="emptyMemberName">Add Member name</string>
+</resources>
